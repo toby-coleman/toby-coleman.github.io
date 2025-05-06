@@ -13,9 +13,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
+      justify-content: flex-start;
+      min-height: 100vh;
       text-align: center;
+      padding-top: 10vh;
     }
     h1 {
       font-size: 2.5rem;
@@ -24,12 +25,57 @@
     p {
       font-size: 1.25rem;
       color: #4b5563;
+      margin-bottom: 2rem;
+    }
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 600px;
+      margin: 0 auto 2rem auto;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background-color: #f3f4f6;
+      font-weight: 600;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .contact {
+      font-size: 1rem;
+      color: #374151;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
 <body>
   <h1>Cross Entropy Consulting Ltd</h1>
   <p>Data Science Consultancy in the Energy Sector</p>
-  <p>Contact: work at tobycoleman dot com</at></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Services Offered</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Developing machine-learning and AI models</td>
+      </tr>
+      <tr>
+        <td>Forecasting algorithms</td>
+      </tr>
+      <tr>
+        <td>Simulation in Python</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="contact">Contact: work &lt;at&gt; tobycoleman &lt;dot&gt; com</p>
 </body>
 </html>
